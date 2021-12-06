@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 echo "Installing Beets & plugins"
-pip install --no-cache-dir -U \
+pip3 install --no-cache-dir -U \
     beets \
     beetcamp \
 	beautifulsoup4 \
