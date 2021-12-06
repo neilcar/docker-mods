@@ -8,8 +8,6 @@ pip3 install --no-cache-dir -U \
 	beets-extrafiles \
 	discogs-client \
 	flask \
-	pillow \
-	pip \
 	pyacoustid \
 	requests \
 	unidecode
