@@ -8,5 +8,6 @@ apt-get install -y \
     python3-dev \
     python3-pip \
     python3-venv \
-    ffmpeg && \
+    ffmpeg \
+    snapd && \
 snap install aacgain mp3gain
