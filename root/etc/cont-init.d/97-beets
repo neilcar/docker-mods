@@ -10,4 +10,5 @@ pip3 install --no-cache-dir -U \
 	flask \
 	pyacoustid \
 	requests \
-	unidecode
+	unidecode \
+	pylast
