@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+ echo "**** cleanup ****" && \
+ apk del --purge \
+	build-dependencies && \
+ rm -rf \
+	/root/.cache \
+	/tmp/*

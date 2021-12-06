@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+
+echo "Installing Beets & plugins"
+pip install --no-cache-dir -U \
+    beets \
+    beetcamp \
+	beautifulsoup4 \
+	beets==${BEETS_VERSION} \
+	beets-extrafiles \
+	discogs-client \
+	flask \
+	pillow \
+	pip \
+	pyacoustid \
+	requests \
+	unidecode && \
