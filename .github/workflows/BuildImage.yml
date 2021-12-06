@@ -53,7 +53,7 @@ jobs:
       - name: Login to DockerHub
         if: ${{ github.ref == format('refs/heads/{0}-{1}', env.BASEIMAGE, env.MODNAME) && env.DOCKERUSER && env.DOCKERPASS }}
         run: |
-          echo ${{ secrets.DOCKERPASS }} | docker login -u ${{ secrets.DOCKERUSER }} --password-stdin
+          echo ${{ secrets.DOCKERPASS }} | docker login -u ${{ secrets.DOCKERUSER }} ${ENDPOINT} --password-stdin
 
       - name: Push tags to DockerHub
         if: ${{ github.ref == format('refs/heads/{0}-{1}', env.BASEIMAGE, env.MODNAME) && env.DOCKERUSER && env.DOCKERPASS }}
